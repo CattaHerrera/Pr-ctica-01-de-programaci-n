@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FORMULARIO</title>
+	<!-- Incluir bulma.min.css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/bulma.min.css">
+</head>
+	<body>
+
+		<section class="hero is-primary">
+  			<div class="hero-body">
+    				<p class="title">
+      					DATOS PERSONALES 
+    				</p>
+  			</div>
+		</section>
+
+			<section class="section is-medium columns">
+
+  				<div class="column"></div>
+
+  					<div class="column is-five-fifths">
+						<form action="procesar.php" method="post">
+
+							<div class="box">
+							
+							  	<div>
+									<label class="label">Nombre:</label>
+									<input class="input is-primary" type="text" name="nombre" required>
+								</div>
+
+								<div>
+									<label class="label">Apellido Paterno:</label>
+									<input class="input is-primary" type="text" name="ap" required>
+								</div>
+
+								<div>
+									<label class="label">Apellido Materno:</label>
+									<input class="input is-primary" type="text" name="am" required>
+								</div>
+
+								<div>
+									<label class="label">Cargo:</label>
+									<input class="input is-primary" type="text" name="cargo" required>
+								</div>
+
+								<div>
+									<label class="label">RFC:</label>
+									<input class="input is-primary" type="text" name="rfc" required>
+								</div>
+
+								<div>
+									<label class="label">CURP:</label>
+									<input class="input is-primary" type="text" name="curp" required>
+								</div>
+
+								<div>
+									<label class="label">Domicilio:</label>
+									<input class="input is-primary" type="text" name="domicilio" required>
+								</div>
+
+								<div>
+									<label class="label">Telefono:</label>
+									<input class="input is-primary" type="tel" name="tel" required>
+								</div>
+
+								<div>
+                   					<label class="label">Email</label>
+                 			  		<input class="input is-primary" type="email" name="correo" value="hello@">
+
+               					</div>
+
+								<div>
+									<label class="label">Sexo</label>
+									<div class="control">
+  										<label class="radio" >
+										 
+   										 <input type="radio" name="sexo" value="Hombre">
+											Hombre
+  										</label>
+ 										 <label class="radio" >
+										
+  									 		 <input type="radio" name="sexo" value="Mujer">
+												Mujer
+  										</label>
+										  <label class="radio">
+										 
+  									 		 <input type="radio" name="sexo" value="Otros">
+												Otro
+  										</label>
+									</div>
+        
+               					</div>
+								   
+
+								<div>
+                   					<label class="label">Fecha de Nacimiento:</label>
+                     				<input class="input is-primary" type="date" name="fNacimiento">
+        
+               					</div>
+
+								<div>
+                     				<label class="label">Estado Civil:</label>
+                  				   <div class="select is-primary">
+  										<select name="eCivil">
+    										<option>Casado</option>
+   											 <option>Soltero</option>
+												<option>Viudo</option>
+ 										</select>
+									</div>
+        
+             				   </div>
+
+								<div>
+                				     <label class="label">Escolaridad:</label>
+                   					  <input class="input is-primary" type="text" name="escolaridad">
+        
+            				    </div>
+
+				
+								<div>
+                 				    <label class="label">Referencia Familiar:</label>
+                				     <input class="input is-primary" type="text" name="rFamiliar" >
+        
+             				   </div>
+
+								<div>
+								<label class="label">observaciones:</label>
+								<textarea class="textarea is-primary" name="observaciones"></textarea>
+								</div>
+
+				
+								<div>
+									<input class="button is-primary" type="submit" value="Enviar">
+								</div>
+
+							</div>
+						</form>
+				</div>
+
+		<div class="column"></div>
+
+		</section>
+
+	</body>
+</html>
