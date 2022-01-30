@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>INFORMACIÓN</title>
+	<!-- Incluir bulma.min.css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/bulma.min.css">
+</head>
+<body>
+
+			<section class="hero is-info">
+  				<div class="hero-body">
+   					 <p class="title">
+     				  INFORMACIÓN GUARDADA
+   					 </p>
+    
+				  </div>
+			</section>
+
+	<section class="section is-medium columns">
+
+  		<div class="column"></div>
+
+  		<div class="column is-two-fifths">
+			
+
+  			<?php
+	
+				$nombre = $_POST['nombre'];
+				$apellidoP = $_POST['ap'];
+				$apellidoM = $_POST['am'];
+				$cargo = $_POST['cargo'];
+				$rfc = $_POST['rfc'];
+				$curp = $_POST['curp'];
+				$domicilio = $_POST['domicilio'];
+				$telefono = $_POST['tel'];
+				$correo = $_POST['correo'];
+				$sexo = $_POST['sexo'];
+				$fNacimiento = $_POST['fNacimiento'];
+				$eCivil = $_POST['eCivil'];
+				$escolaridad = $_POST['escolaridad'];
+				$rFamiliar = $_POST['rFamiliar'];
+				$observaciones = $_POST['observaciones'];
+
+				echo "<h1 class='is-subtitle'>";
+				echo "Hola " . "<strong>" . $nombre ." " . $apellidoP . " " . $apellidoM . "</strong>";
+				echo "<strong> <br>Cargo: </strong>" . $cargo;
+				echo "<strong> <br>RFC: </strong>" . $rfc;
+				echo "<strong> <br>CURP: </strong>" . $curp;
+				echo "<strong> <br>Dirección es: </strong>" . $domicilio;
+				echo "<strong> <br>Télefono: </strong>" . $telefono;
+				echo "<strong> <br>Correo: </strong>" . $correo;
+				echo "<strong> <br>Genero: </strong>" . $sexo;
+				echo "<strong> <br>Fecha de Nacimiento: </strong>" . $fNacimiento;
+				echo "<strong> <br>Estado Civil: </strong>" . $eCivil;
+				echo "<strong> <br>Escolaridad: </strong>" . $escolaridad;
+				echo "<strong> <br>Referencia Familiar: </strong>" . $rFamiliar;
+				echo "<strong> <br>Observaciones: </strong>" . $observaciones;
+			
+				echo "</h1>";
+			?>
+
+
+		</div>
+
+		<div class="column"></div>
+
+	</section>
+
+</body>
+</html>
+
+
